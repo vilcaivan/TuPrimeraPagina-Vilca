@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Web Django</title>
+</head>
+<body>
+    <h1>Pre-Entrega 3 - CODERHOUSE 78325</h1>
+    <nav>
+        <a href="{% url 'home' %}">Inicio</a> |
+        <a href="{% url 'add_autor' %}">Añadir Escritor</a> |
+        <a href="{% url 'add_categoria' %}">Añadir Categoria</a> |
+        <a href="{% url 'add_post' %}">Postear</a>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
